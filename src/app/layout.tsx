@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Menu from "@/components/menu";
 
 export const metadata: Metadata = {
-  title: "Aplicando conhecimentos em next JS",
+  title: "Aprendendo NEXT/JS",
   description: "Criado por Bruno Costa",
 };
 
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <Menu />
+        {children}
+      </body>
     </html>
   );
 }
