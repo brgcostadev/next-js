@@ -7,7 +7,7 @@ export default function Menu() {
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/sobre" prefetch={true}>
+        <Link href="/sobre#empresa" scroll={false} prefetch={true}>
           Sobre
         </Link>
       </li>
