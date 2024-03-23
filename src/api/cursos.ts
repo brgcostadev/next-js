@@ -5,7 +5,7 @@ type Curso = {
   descricao: string;
   total_aulas: number;
   total_horas: number;
-  aulas: [];
+  aulas: Aula[];
 };
 
 type Aula = {
@@ -25,9 +25,7 @@ export async function getCursos() {
 
 export async function getCurso(curso: string) {
   const response = await fetch(`https://api.origamid.online/cursos/${curso}`);
-  return (await response.json()) as Curso & {
-    aulas: Aula[];
-  };
+  return (await response.json()) as Curso;
 }
 
 export async function getAula(curso: string, aula: string) {

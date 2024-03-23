@@ -22,7 +22,7 @@ export default function Width() {
       <h2 style={{ color: ativo ? "#680" : "#b00" }}>
         Largura da tela: {width}
       </h2>
-      <button onClick={() => setAtivo(!ativo)}>Ativar</button>
+      <button onClick={() => setAtivo((s) => !s)}>Ativar</button>
     </div>
   );
 }
