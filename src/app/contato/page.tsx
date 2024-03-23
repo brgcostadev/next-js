@@ -1,3 +1,4 @@
+import ClientFetch from "@/components/client-fetch";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export default function ContatoPage() {
     <main>
       {" "}
       <h2>Contato</h2>
+      <ClientFetch />
     </main>
   );
 }
