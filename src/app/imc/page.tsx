@@ -1,6 +1,6 @@
 import CalculaImc from "@/components/imc";
 
-export default function Imc() {
+export default function ImcPage() {
   return (
     <main>
       <h2>Calculadora IMC</h2>
