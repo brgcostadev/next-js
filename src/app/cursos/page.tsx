@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default async function CursosPage() {
   const cursos = await getCursos();
-  console.log(cursos);
   return (
     <main>
       <h1>Cursos</h1>

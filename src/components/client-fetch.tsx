@@ -16,7 +16,6 @@ export default function ClientFetch() {
       const response = await fetch("https://api.origamid.online/produtos");
       const json = (await response.json()) as Produto[];
       setData(json);
-      console.log("fetch Client " + json);
     }
     fetchData();
   }, []);
